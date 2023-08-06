@@ -1,36 +1,63 @@
-/* .img-fluid {
-    width: 100%;
-}
-.full-width-img  {
-    width: 100%;
-}
-.upline {
-    width: 100%;
-} */
+body {
+    overflow: hidden; /* Hide scrollbars */
+  }
 
-.img-fluid , .full-width-img , .upline {
+.img-fluid , .full-width-img, .upline {
     width:100%;
 }
 
-.img-fluid {
-     /*width 100vh initialy*/
+.img-fluid {  
     height: 100vh;
 }
 
 .full-width-img {
     position: absolute;
-    height: 90%;
+    height: 100%;
     left: 0;
 }
 
 .upline {
     font-size: 20px;
     position: absolute;
-    padding: 15px;
+    padding: 10px;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.5) ;
-    color: rgba(252, 252, 252, 0.5);
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.575) ;
 }
+
+.svgsize {
+    width: 20px;
+    height: 20px;
+}
+
+.nounderline {
+    text-decoration: none;
+}
+
+/* .hoversvg:hover {
+    font-size: large;
+    width: 30px;
+    height: 30px;
+    color:aqua;
+} */
+
+.colortxt, .upline {
+    color: white;
+}
+
+.test:hover {
+    color: blue;
+}
+
+.biggersvg:hover {
+    width:25px;
+    height:25px;
+} 
+/* transition: all .2s ease-in-out; */
+
+
+
+
 
 /* --breakpoint-xs: 0;
     --breakpoint-sm: 576px;

@@ -8,9 +8,9 @@
 
 
 
-
+<!--
 <section>
-    <img src="assets/images/logo.jpg"
+    <img src="assets/images/logo_pizzerius.jpg"
         class="full-width-img"
         alt="Image de pizza en fond du site"
     >
@@ -19,7 +19,7 @@
             sur place ou à emporter
         </p>
     </div>
-</section> 
+</section>  -->
 
 
 
