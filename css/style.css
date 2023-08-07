@@ -1,67 +1,56 @@
-body {
-    overflow: hidden; /* Hide scrollbars */
-  }
-
-.img-fluid , .full-width-img, .upline {
-    width:100%;
-}
-
-.img-fluid {  
-    height: 100vh;
-}
-
-.full-width-img {
-    position: absolute;
-    height: 100%;
-    left: 0;
-}
-
-.upline {
-    font-size: 20px;
-    position: absolute;
-    padding: 10px;
-    z-index: 1;
-    font-weight: 600;
-    background: rgba(0, 0, 0, 0.575) ;
-}
-
-.svgsize {
-    width: 20px;
-    height: 20px;
-}
-
-.nounderline {
-    text-decoration: none;
-}
-
-/* .hoversvg:hover {
-    font-size: large;
-    width: 30px;
-    height: 30px;
-    color:aqua;
-} */
-
-.colortxt, .upline {
-    color: white;
-}
-
-.test:hover {
-    color: blue;
-}
-
-.biggersvg:hover {
-    width:25px;
-    height:25px;
-} 
-/* transition: all .2s ease-in-out; */
-
-
-
-
-
 /* --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px; */
 
+.logo {
+    position: absolute;
+    top: 80px; 
+    left: 50%;
+}
+
+.navbarcss {
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+    width:50%;
+    left: 25%;
+    top: 35%;
+}
+
+.colorunderline {
+    /* text-decoration: transparent; */
+    color: #189BC7;
+}
+.colorunderline:hover {
+    text-decoration: blue ;
+    color: #189BC7;
+}
+
+.test {
+    position:absolute;
+    top: 20%;
+    background-color: red;
+    width: 400vh;
+    left:-40%;
+    
+}
+.bobo
+{
+width: 100%;
+ margin:0 40px; 
+}
+
+
+/* <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 nav nav-pills">
+        <?php foreach ($mainMenu as $key => $value) { ?>
+          <li class="nav-item"><a href="<?=$key; ?>" class="nav-link textcolor <?php if ($currentPage === $key) { echo 'maincolor'; } ?>"><?=$value ;?></a></li>
+        <?php } ?>
+      </ul> */
+
+      /* $mainMenu = [
+    'index.php' => 'Accueil',
+    'form.php' => 'Devis',
+    'usedvehicule.php' => 'Véhicules d\'occasions',
+  ]; */

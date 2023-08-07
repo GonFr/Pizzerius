@@ -7,6 +7,7 @@
     <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Pizzerius, votre pizzeria à Bordeaux, Les meilleurs pizzas italienne proche de chez vous</title>
 </head>
@@ -17,13 +18,17 @@
 <section class="upline">
     <div class="full-container text-center ">
         <ul class="row align-items-start nav nav-pills">
-            <li class="col"><a href="https://t.ly/qirHS" target="_blank" class="nounderline hoversvg ">
-                <img src="assets/images/pin-map.svg" alt="Icone map renvoyant à l'adresse de Pizzerius"  class="svgsize biggersvg">
-                <span class="colortxt test">1 rue de Bordeaux</span></a>
+            <li class="col">
+                <a href="https://t.ly/qirHS" target="_blank" class="nounderline hoversvg ">
+                    <img src="assets/images/pin-map.svg" alt="Icone map renvoyant à l'adresse de Pizzerius"  class="svgsize biggersvg">
+                    <span class="colortxt">1 rue de Bordeaux</span>
+                </a>
             </li>
-            <li class="col"><a href="tel:06 12 34 56 78" class="nounderline hoversvg">
-                <img src="assets/images/phone.svg" alt="Icone téléphone renvoyant au numéro de téléphone de Pizzerius" class="biggersvg">
-                <span class="colortxt test">06 12 34 56 78</span></a> 
+            <li class="col">
+                <a href="tel:06 12 34 56 78" class="nounderline hoversvg">
+                    <img src="assets/images/phone.svg" alt="Icone téléphone renvoyant au numéro de téléphone de Pizzerius" class="biggersvg">
+                    <span class="colortxt">06 12 34 56 78</span>
+                </a> 
             </li>
             <li class="col">
                 <img src="assets/images/clock.svg" alt="Icone d'horloge">
@@ -32,6 +37,8 @@
         </ul>
     </div>
 </section>
+
+
 
     
 </body>
