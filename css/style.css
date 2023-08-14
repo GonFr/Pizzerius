@@ -4,53 +4,17 @@
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px; */
 
-.logo {
-    position: absolute;
-    top: 80px; 
-    left: 50%;
-}
 
-.navbarcss {
-    font-size: 20px;
-    position: absolute;
-    font-weight: 600;
-    width:50%;
-    left: 25%;
-    top: 35%;
-}
-
-.colorunderline {
-    /* text-decoration: transparent; */
-    color: #189BC7;
-}
-.colorunderline:hover {
-    text-decoration: blue ;
-    color: #189BC7;
-}
-
-.test {
-    position:absolute;
-    top: 20%;
+/* .nav-item:hover {
     background-color: red;
-    width: 400vh;
-    left:-40%;
-    
-}
-.bobo
-{
-width: 100%;
- margin:0 40px; 
-}
+  }
+  .navbar-text:hover {
+    background-color: red;
+  } */
+
+  /* .text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  } */
 
 
-/* <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 nav nav-pills">
-        <?php foreach ($mainMenu as $key => $value) { ?>
-          <li class="nav-item"><a href="<?=$key; ?>" class="nav-link textcolor <?php if ($currentPage === $key) { echo 'maincolor'; } ?>"><?=$value ;?></a></li>
-        <?php } ?>
-      </ul> */
-
-      /* $mainMenu = [
-    'index.php' => 'Accueil',
-    'form.php' => 'Devis',
-    'usedvehicule.php' => 'Véhicules d\'occasions',
-  ]; */
