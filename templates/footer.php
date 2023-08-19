@@ -17,6 +17,19 @@
         <title>Pizzerius, votre pizzeria à Bordeaux, Les meilleurs pizzas italienne proche de chez vous</title>
     </head>
 
+    <!-- Upline color blue on hover--> 
+    <div class="position-absolute bg-success bg-opacity-75 container-fluid position-bottom text-white hstack justify-content-center">
+        <nav class="justify-content-between">
+            <footer class="py-3 my-4">
+                <ul class="navbar-nav gap-5 hstack">
+                    <?php foreach ($secondaryMenu as $key => $value) { ?>
+                        <li class="nav-item"><a href="<?=$key; ?>" class="text-white text-opacity-50 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><?=$value ;?></a></li>
+                    <?php } ?>
+                </ul>
+            </footer>
+        </nav>
+    </div>
+<!--
     <div class="container">
         <footer class="py-3 my-4">
             <ul class="navbar-nav gap-5">
@@ -27,7 +40,7 @@
         </footer>
     </div>
     
-<!--
+
     <div class="container">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">

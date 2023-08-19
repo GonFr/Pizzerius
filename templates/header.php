@@ -19,7 +19,7 @@
     <body>
         <header>   
             <!-- Background image -->
-            <div class="container-fluid p-0">
+            <div class="container-fluid p-0 w-100">
                 <img 
                     src="assets/images/fond_pizza.png" 
                     class="" 
@@ -68,9 +68,9 @@
                                 </div>
                             </div>
                         </nav>
-                    </div>
-                </div>
-            </div>
+                    </div> 
+                </div> 
+            </div> 
         </header>                                 
     </body>
 </html>

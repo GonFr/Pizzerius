@@ -12,8 +12,3 @@ $mainMenu = [
     'tes.php' => 'Mentions Légales',
     'legal.php' => 'CGU',
   ]; 
-
-//   © 2019 piazzetta.fr
-// Mentions Légales
-// CGU
-// Plan du site
