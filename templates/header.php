@@ -1,5 +1,7 @@
 <?php 
-    require_once('lib/config.php');
+    include_once('C:\xampp\htdocs\pizzerius\lib\config.php');
+
+    $currentPage = basename($_SERVER['SCRIPT_NAME']);
 ?>
 
 
@@ -12,45 +14,33 @@
         <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/> 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
         <title>Pizzerius, votre pizzeria à Bordeaux, Les meilleurs pizzas italienne proche de chez vous</title>
     </head>
-
     <body>
-        <header>   
-            <!-- Background image -->
-            <div class="container-fluid p-0 w-100">
-                <img 
-                    src="assets/images/fond_pizza.png" 
-                    class="" 
-                    alt="Image de pizza pour le fond du site"
-                    width="100%"
-                    height="1200px"
-                >
-            </div>
-
-            <!-- Upline color blue on hover--> 
-            <div class="position-absolute bg-success bg-opacity-75 container-fluid sticky-top position-fixed text-white p-3">
-                <nav class="justify-content-between hstack">
+        <header>    
+            <div class="firstbackimg">
+                <!-- Upline -->
+                <nav class="justify-content-between hstack sticky-top uplinecolor">
                     <a class="btn hstack" href="https://www.google.fr" target="_blank">
-                        <img src="assets/images/icon_map.svg" alt="Icone map renvoyant à l'adresse de Pizzerius" class="m-3" width="25" height="25">
-                        <span class="d-none d-xl-block fs-3 fw-bold text-white">1 rue de Bordeaux</span>
+                        <img src="assets/images/pinmap_upline.png" alt="Icone map renvoyant à l'adresse de Pizzerius" class="hovericon" width="100" height="100">
+                        <span class="d-none d-xl-block fs-4 fw-bold uplinetextwhite">1 rue de Bordeaux</span>
                     </a>
                     <a class="btn hstack" href="tel:02 51 78 81 15">
-                        <img src="assets/images/icon_phone.svg" alt="Icone téléphone" class="m-3"  width="25" height="25">
-                        <span class="d-none d-xl-block fs-3 fw-bold text-white">06 12 34 56 78</span>
+                        <img src="assets/images/phone_upline.png" alt="Icone téléphone" class="hovericon"  width="100" height="100">
+                        <span class="d-none d-xl-block fs-4 fw-bold uplinetextwhite">06 12 34 56 78</span>
                     </a>
-                    <div class="hstack"><!-- tooltip on image?? -->
-                        <img src="assets/images/icon_clock.svg" alt="Icone horloge" class="m-3" width="25" height="25">
-                        <span class="d-none d-xl-block fs-3 fw-bold">Du Mardi au Samedi, sauf Mardi soir</span>
+                    <div class="hstack">
+                        <img src="assets/images/clock_upline.png" alt="Icone horloge" class="hovericon" width="100" height="100">
+                        <span class="d-none d-xl-block fs-4 fw-bold p-2 uplinetextwhite">Du Mardi au Samedi</span>
                     </div>
                 </nav>
-            </div>
 
-            <!-- Navbar + Logo --><!-- Change colors and hovers -->
-            <div class="position-absolute top-50 start-50 translate-middle text-center container-fluid">
                 <!--Logo-->
-                <img class="d-block mx-auto" src="assets/images/logo.png" alt="logo de l'entreprise pizzerius" width="250" height="250">
+                <img class="d-block mx-auto" src="assets/images/logo_pizzerius.png" alt="logo de l'entreprise pizzerius" width="400" height="250">
                 <div class="container">
                     <!-- Navbar-->
                     <div class="d-flex justify-content-center">
@@ -62,15 +52,19 @@
                                 <div class="collapse navbar-collapse" id="nvb">
                                     <ul class="navbar-nav gap-5">
                                         <?php foreach ($mainMenu as $key => $value) { ?>
-                                            <li class="nav-item link-white m-3 p-3 rounded bg-dark text-white-50"><a href="<?=$key; ?>" class="text-white text-opacity-50 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><?=$value ;?></a></li>
+                                            <li class="nav-item"><a href="<?=$key; ?>" class="nav-link fw-bold textcolor rounded <?php if ($currentPage === $key) { echo 'navcolor'; } ?>"><?=$value ;?></a></li>
                                         <?php } ?>
                                     </ul>
-                                </div>
-                            </div>
-                        </nav>
+                                </div> 
+                            </div> 
+                        </nav> 
                     </div> 
                 </div> 
-            </div> 
+                <!-- Maintext -->
+                <div class="container">
+                    <h1 class="text-center textheader">La meilleure pizza du coin, <br> à emporter</h1> 
+                </div>
+            </div>
         </header>                                 
     </body>
 </html>

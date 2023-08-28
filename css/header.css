@@ -1,0 +1,43 @@
+.firstbackimg{
+    background-image: url('../assets/images/image\ de\ fond\ V4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+
+.uplinecolor {
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.uplinetextwhite, .textheader {
+    color:white;
+}
+
+.uplinetextwhite {
+    color:white;
+}
+    .uplinetextwhite:hover {
+        color: #189BC7;
+    }
+
+.hovericon:hover {
+    transform: rotate(45deg);
+}
+
+.textheader {
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    font-weight: bolder;
+    
+}
+
+.navcolor {
+    
+    background-color: Black !important;
+    color : white !important;
+    font-weight:bold !important;
+
+}
+
+/* #189BC7 */

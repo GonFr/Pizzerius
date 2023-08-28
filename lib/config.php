@@ -1,10 +1,10 @@
 <?php 
 
 $mainMenu = [
-    'index.php' => 'Accueil',
-    'menu.php' => 'Notre Carte',
-    'contact.php' => 'Contactez-nous',
-    'about.php' => 'Découvrez la pizzerius',
+    'index.php' => 'ACCUEIL',
+    'pages/menu.php' => 'NOTRE CARTE',
+    'contact.php' => 'CONTACTEZ-NOUS',
+    'about.php' => 'DECOUVREZ PIZZERIUS',
   ]; 
 
   $secondaryMenu = [

@@ -4,6 +4,38 @@
     
     // define('_ROOTPATH_', __DIR__.'/');
 ?>
+<!-- Enlever barre horizontale pb ici !!!-->
+<section id="restaurant">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 text-center">
+                <img src="assets/images/pizza_oven.jpg" class="img-fluid">
+            </div>
+            <div class="col-sm-6 d-flex justify-content-center flex-column">
+                <div>
+                <h1>Envie de vous souvenir du goût d'une vraie pizza italienne de votre enfance ?</h1>
+                <p></p><p>Votre pizza cuite et façonnée traditionnellement n'attends que vous pour la déguster encore chaude et fondante.</p>
+                <h2>Nos <strong>pizzas</strong>, à déguster sur place ou <strong>à emporter</strong>, sont préparées dans la pure tradition italienne, avec amour et passion.</h2>		
+                <button type="button" class="btn btn-primary rounded-4">Découvrez pizzerius</button>			
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<div class="loblo text-center text-white row">
+    <div class="col">
+        <img src="assets/images/icon_phone.svg" alt=""><br>
+        <span>Parcourez notre carte</span>
+    </div>
+    <div class="col">
+        <img src="assets/images/icon_phone.svg" alt=""><br>
+        <span>Contactez-nous</span>
+    </div>
+</div>
+
+
+
+
 
 <div class="row border border-dark container-fluid py-5 rounded">
     <!-- Carousel -->
@@ -51,6 +83,24 @@
     </div>
 </div>
 
+
+<div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom text-center fs-1">Note</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col"><!-- Pizza faites maison -->
+            <img src="assets/images/voiture_remplacement.jpg" alt="Logo de l'entreprise de V.Parrot" width="500">
+        
+        </div>
+        <div class="col"><!-- Produit locaux -->
+            <img src="assets/images/reparation_rapide.jpg" alt="Logo de l'entreprise de V.Parrot" width="500">
+            
+        </div>
+        <div class="col"><!-- Préparation rapide -->
+            <img src="assets/images/garantie_constructeur.jpg" alt="Logo de l'entreprise de V.Parrot" width="500">
+            
+        </div>
+    </div>
+</div>
 
 
 
