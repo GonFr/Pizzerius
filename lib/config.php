@@ -2,7 +2,7 @@
 
 $mainMenu = [
     'index.php' => 'ACCUEIL',
-    'pages/menu.php' => 'NOTRE CARTE',
+    'menu.php' => 'NOTRE CARTE',
     'contact.php' => 'CONTACTEZ-NOUS',
     'about.php' => 'DECOUVREZ PIZZERIUS',
   ]; 

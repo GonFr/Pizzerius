@@ -1,0 +1,50 @@
+.maintitlecolor {
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+}
+
+.maintitlecolor ,.secondtitlecolor, .textnotes {
+    color :#189BC7;
+}
+
+.middletext, .textnotes{
+    font-size: larger;
+}
+
+.btncustom {
+    background-color: #189BC7;
+    font-weight:bold;
+    color:white;
+}
+.btncustom:hover {
+    background-color: #189bc777;
+}
+
+.textbtn, .textdancingscript, .textnotes {
+    font-family: 'Dancing Script', cursive;
+}
+
+.textbtn {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.secondbackimg {
+    background-image: url('../assets/images/secondarybackimg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:50vh;
+}
+
+.secondbtncustom {
+    border:black solid 3px;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
+.textnotes {
+    border-bottom: 3px solid black;
+}
+
+/* #189BC7 */
