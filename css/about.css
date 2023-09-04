@@ -1,0 +1,15 @@
+.title {
+    color :#189BC7;
+    font-family: 'Dancing Script', cursive;
+    font-weight:bold;
+    font-size:4em;
+}
+
+.bobi {
+    background-color: #189BC7;
+    font-weight:bold;
+    color:white;
+}
+.bobi:hover {
+    background-color: #189bc777;
+}

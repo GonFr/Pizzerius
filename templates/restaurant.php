@@ -13,7 +13,7 @@
                 <p class="middletext">Votre pizza cuite et façonnée traditionnellement n'attends que vous pour la déguster encore chaude et fondante.</p>
                 <h2>Chez <strong class="secondtitlecolor">Pizzerius</strong>, nos pizzas <strong class="secondtitlecolor">à emporter</strong> sont préparées dans la pure tradition italienne, avec amour et passion.</h2>		
                 <div class="d-grid gap-2">
-                    <button class="btn rounded-4 btncustom" type="button">DÉCOUVREZ <strong class="textbtn">Pizzerius</strong></button>
+                    <a class="btn rounded-4 btncustom" href="about.php" type="button">DÉCOUVREZ <strong class="textbtn">Pizzerius</strong></a>
                 </div>			
             </div>
         </div>

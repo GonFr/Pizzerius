@@ -51,4 +51,4 @@ $commentStatement = $pdo->prepare($sqlQuery);
 $commentStatement->execute();
 $comments = $commentStatement->fetchAll();
 
-// On affiche chaque recette une à une
+// On affiche chaque commentaire un à un

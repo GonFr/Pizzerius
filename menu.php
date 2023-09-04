@@ -1,9 +1,40 @@
 <?php
     require_once('templates/header.php');
-    require_once('lib/addpizza.php');
-
-
+    
 ?>
+
+&nbsp; 
+<div class="container-fluid">
+    <h1 class="maintitle text-center">Vous désirez <strong>emporter</strong> une délicieuse <strong>pizza</strong> ?</h1>
+    <h2 class="secondarytitle">Notre carte saura vous ravir</h2>
+    <p class="fs-5">Chez <stong>Pizzerius</strong>, nous vous proposons un choix de <strong>pizza</strong> restreint qui vous assure un savoir-faire maîtrisé ainsi qu'un goût incomparable !</p>
+</div>
+
+<?php 
+require_once('lib/addpizza.php');
+?>
+
+
+<?php
+// On affiche chaque pizza une à une
+foreach ($pizzas as $pizza) {
+?>
+
+
+<div class="container-fluid border-bottom border-1 border-dark">
+&nbsp;
+<h1 class="namepizza"><?php echo $pizza['name']; ?></h1>
+<div>
+    <span class="fs-5 fw-bold textcolor">Ingrédients : </span><?php echo $pizza['ingredients']; ?></span><br>
+    <span class="fw-bold textcolor">petite : </span><?php echo $pizza['littlepizzaprice']; ?> €</span><br>
+    <span class="fw-bold textcolor">grande : </span><?php echo $pizza['bigpizzaprice']; ?> €</span>
+</div>
+
+</div>
+
+
+<?php
+} ?>
 
 
 <h1>Enregistrer une nouvelle Pizza</h1>
@@ -21,39 +52,30 @@
 <?php } ?>
 
 
+
 <form method="POST" enctype="multipart/form-data">
     <div class="mb-3">
-        <label for="title" class="form-label">Titre</label>
-        <input type="text" name="title" id="title" class="form-control">
+        <label for="name" class="form-label">Nom de la pizza</label>
+        <input type="text" name="name" id="name" class="form-control">
     </div>
     <div class="mb-3">
-        <label for="price" class="form-label">Prix</label>
-        <input type="text" name="price" id="price" class="form-control">
-    </div> <!--
+        <label for="littlepizzaprice" class="form-label">Prix de la petite pizza</label>
+        <input type="text" name="littlepizzaprice" id="littlepizzaprice" class="form-control">
+    </div> 
     <div class="mb-3">
-        <label for="kilometrage" class="form-label">Kilométrage</label>
-        <input type="text" name="kilometrage" id="kilometrage" class="form-control">
-    </div> -->
+        <label for="bigpizzaprice" class="form-label">Prix de la grande pizza</label>
+        <input type="text" name="bigpizzaprice" id="bigpizzaprice" class="form-control">
+    </div> 
+    <div class="mb-3">
+        <label for="ingredients" class="form-label">Liste des ingrédients séparés par des virgules</label>
+        <input type="text" name="ingredients" id="ingredients" class="form-control">
+    </div> 
     <input type="submit" value="Enregistrer" name="addpizza" class="btn btn-primary">
 
 
 </form>
 
-<?php
-// On récupère tout le contenu de la table pizzas
-$sqlQuery = 'SELECT * FROM pizzas';
-$pizzaStatement = $pdo->prepare($sqlQuery);
-$pizzaStatement->execute();
-$pizzas = $pizzaStatement->fetchAll();
 
-// On affiche chaque recette une à une
-foreach ($pizzas as $pizza) {
-?>
-    <p><?php echo $pizza['title']; ?></p>
-    <p><?php echo $pizza['price']; ?></p>
-<?php
-}
-?>
 
 <?php
 require_once('templates/footer.php');

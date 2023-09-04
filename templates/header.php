@@ -4,7 +4,7 @@
     //https://www.youtube.com/watch?v=hO8elaSPSkU
     $currentPage = basename($_SERVER['SCRIPT_NAME']);
 ?>
-
+<!-- Mettre Breadcrumbs -->
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -18,6 +18,8 @@
         <link rel="stylesheet" type="text/css" href="css/header.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <link rel="stylesheet" type="text/css" href="css/modal.css"/>
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/about.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">

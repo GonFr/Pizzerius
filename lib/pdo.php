@@ -9,13 +9,14 @@ try {
     $pdo = new PDO("mysql:host=localhost;dbname=pizzerius", 'root', '');
     $pdo->exec('CREATE TABLE IF NOT EXISTS pizzas (
         id INT(11) PRIMARY KEY AUTO_INCREMENT,
-        title VARCHAR(500),
-        price  DECIMAL (20,2)
+        name VARCHAR(500),
+        littlepizzaprice  DECIMAL (20,2),
+        bigpizzaprice  DECIMAL (20,2),
+        ingredients VARCHAR(500)
         )');
     $pdo->exec('CREATE TABLE IF NOT EXISTS users (
         id INT(11) PRIMARY KEY AUTO_INCREMENT,
-        title VARCHAR(500),
-        price  DECIMAL (20,2)
+        title VARCHAR(500)
         )');
     $pdo->exec('CREATE TABLE IF NOT EXISTS commentarea (
         id INT(11) PRIMARY KEY AUTO_INCREMENT,
