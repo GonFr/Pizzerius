@@ -1,9 +1,9 @@
-.maintitlecolor {
+.maintitlecolor, .titlecomments, .textcomments {
     font-weight: 700;
     font-family: 'Dancing Script', cursive;
 }
 
-.maintitlecolor ,.secondtitlecolor, .textnotes {
+.maintitlecolor ,.secondtitlecolor, .textnotes, .titlecomments, .textcomments {
     color :#189BC7;
 }
 
@@ -46,5 +46,12 @@
 .textnotes {
     border-bottom: 3px solid black;
 }
+
+.fontnormal {
+    font-family: inherit;
+    font-family: Helvetica;
+}
+
+
 
 /* #189BC7 */

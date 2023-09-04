@@ -1,7 +1,7 @@
 <?php 
     require_once('C:\xampp\htdocs\pizzerius\lib\config.php');
     require_once('C:\xampp\htdocs\pizzerius\lib\pdo.php');
-
+    //https://www.youtube.com/watch?v=hO8elaSPSkU
     $currentPage = basename($_SERVER['SCRIPT_NAME']);
 ?>
 
@@ -17,6 +17,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="css/header.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/modal.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">

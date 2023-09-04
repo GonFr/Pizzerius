@@ -1,5 +1,8 @@
 <?php
     require_once('templates/header.php');
+    require_once('lib/addpizza.php');
+
+
 ?>
 
 
@@ -36,7 +39,21 @@
 
 </form>
 
+<?php
+// On récupère tout le contenu de la table pizzas
+$sqlQuery = 'SELECT * FROM pizzas';
+$pizzaStatement = $pdo->prepare($sqlQuery);
+$pizzaStatement->execute();
+$pizzas = $pizzaStatement->fetchAll();
 
+// On affiche chaque recette une à une
+foreach ($pizzas as $pizza) {
+?>
+    <p><?php echo $pizza['title']; ?></p>
+    <p><?php echo $pizza['price']; ?></p>
+<?php
+}
+?>
 
 <?php
 require_once('templates/footer.php');
