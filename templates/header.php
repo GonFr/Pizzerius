@@ -3,7 +3,9 @@
     require_once('C:\xampp\htdocs\pizzerius\lib\pdo.php');
     //https://www.youtube.com/watch?v=hO8elaSPSkU
     $currentPage = basename($_SERVER['SCRIPT_NAME']);
+    
 ?>
+                
 <!-- Mettre Breadcrumbs -->
 
 <!DOCTYPE html>
@@ -20,6 +22,8 @@
         <link rel="stylesheet" type="text/css" href="css/modal.css"/>
         <link rel="stylesheet" type="text/css" href="css/menu.css"/>
         <link rel="stylesheet" type="text/css" href="css/about.css"/>
+        <link rel="stylesheet" type="text/css" href="css/contact.css"/>
+        <link rel="stylesheet" type="text/css" href="css/legalmentions.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
@@ -40,7 +44,7 @@
                     </a>
                     <div class="hstack">
                         <img src="assets/images/clock_upline.png" alt="Icone horloge" class="hovericon" width="100" height="100">
-                        <span class="d-none d-xl-block fs-4 fw-bold p-2 uplinetextwhite">Du Mardi au Samedi</span>
+                        <span class="d-none d-xl-block fs-4 fw-bold p-2 uplinetextwhite">7j/7 11h/23h</span>
                     </div>
                 </nav>
 
@@ -65,11 +69,18 @@
                         </nav> 
                     </div> 
                 </div> 
+                
+                
+                
+
                 <!-- Maintext -->
-                <div class="container">
-                    <h1 class="text-center textheader">La meilleure pizza du coin, <br> à emporter</h1> 
+                <div class="container-fluid">
+                    <h1 class="text-center textheader" id="jschange">La meilleure pizza du coin, à emporter</h1>
                 </div>
             </div>
-        </header>                                 
+        </header>    
+
+        <script src="js/tittlechange.js"></script>
+                           
     </body>
 </html>

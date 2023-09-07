@@ -74,28 +74,28 @@ function verifyUserLoginPassword(PDO $pdo, string $email, string $password) {
     <input type="submit" value="Inscription" name="addUser" class="btn btn-primary">
 </form>
 
-<div id="container">
- <!-- zone de connexion -->
- 
- <form action="modifyadmin.php" method="POST">
- <h1>Connexion</h1>
- 
- <label><b>Nom d'utilisateur</b></label>
- <input type="text" placeholder="Entrer le nom d'utilisateur" name="email" required>
+<!-- Essayer de se connecter -->
 
- <label><b>Mot de passe</b></label>
- <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+<br>
+<br>
+<br>
 
- <input type="submit" id='submit' value='LOGIN' >
- <?php
- if(isset($_GET['erreur'])){
- $err = $_GET['erreur'];
- if($err==1 || $err==2)
- echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
- }
- ?>
- </form>
-
+ <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary" name="login">Submit</button>
+</form>
 
  <?php
   // Initialiser la session
