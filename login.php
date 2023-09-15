@@ -2,7 +2,6 @@
 
 require_once('templates/header.php');
 require_once('lib/pdo.php');
-// require_once('lib/log.php');
 
 ?>
 
@@ -28,9 +27,9 @@ require_once('lib/pdo.php');
     <input type="submit" value="Se connecter" class="btn btn-primary">
 </form>
 
-
-
 <?php
+
+
 
 require_once('templates/footer.php');
 ?>

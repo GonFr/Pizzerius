@@ -16,8 +16,9 @@ try {
         )');
     $pdo->exec('CREATE TABLE IF NOT EXISTS users (
         id INT(11) PRIMARY KEY AUTO_INCREMENT,
-        email VARCHAR(500),
-        password VARCHAR(500)
+        email VARCHAR(254) NOT NULL UNIQUE,
+        username VARCHAR(20) NOT NULL,
+        password VARCHAR(60) NOT NULL
         )');
     $pdo->exec('CREATE TABLE IF NOT EXISTS commentarea (
         id INT(11) PRIMARY KEY AUTO_INCREMENT,
