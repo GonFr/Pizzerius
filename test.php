@@ -107,6 +107,23 @@ function verifyUserLoginPassword(PDO $pdo, string $email, string $password) {
     // Redirection vers la page de connexion
     // header("Location: login.php");
 //   }
+
+// if(!isset($_SESSION['user'])) {
+//     header('location: login.php');
+// }
+
+// Si c'est le patron on ajoute connecté en tant que patron dans une variable + mail
+// 
+// $gon = $_SERVER['PHP_AUTH_USER'];
+// var_dump($gon);
+// $nameid = 'patron';
+// $nameid2 = 'connecté en tant que';
+// if ($_SERVER['PHP_AUTH_USER'] == 'oze@pro.fr') {
+//     echo 'Bienvenue'.$nameid;
+// } else {
+//     echo $nameid2.$_SERVER['PHP_AUTH_USER'];
+// }
+
 ?>
 
  </div>

@@ -1,9 +1,9 @@
 <?php 
+    session_start() ;
     require_once('C:\xampp\htdocs\pizzerius\lib\config.php');
     require_once('C:\xampp\htdocs\pizzerius\lib\pdo.php');
     //https://www.youtube.com/watch?v=hO8elaSPSkU
     $currentPage = basename($_SERVER['SCRIPT_NAME']);
-    
 ?>
                 
 <!-- Mettre Breadcrumbs -->

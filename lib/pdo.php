@@ -17,14 +17,14 @@ try {
     $pdo->exec('CREATE TABLE IF NOT EXISTS users (
         id INT(11) PRIMARY KEY AUTO_INCREMENT,
         email VARCHAR(500),
-        password VARCHAR(500),
-        role VARCHAR(500)
+        password VARCHAR(500)
         )');
     $pdo->exec('CREATE TABLE IF NOT EXISTS commentarea (
         id INT(11) PRIMARY KEY AUTO_INCREMENT,
         name VARCHAR(500),
         comments  VARCHAR(500)
         )');
+    $pdo->exec('INSERT IGNORE INTO users (`id`, `email`, `password`) VALUES ("1", "admin@pizzerius.fr", "pizzerius");');
         
     
 }
