@@ -17,7 +17,6 @@ try {
     $pdo->exec('CREATE TABLE IF NOT EXISTS users (
         id INT(11) PRIMARY KEY AUTO_INCREMENT,
         email VARCHAR(254) NOT NULL UNIQUE,
-        username VARCHAR(20) NOT NULL,
         password VARCHAR(60) NOT NULL
         )');
     $pdo->exec('CREATE TABLE IF NOT EXISTS commentarea (
@@ -25,8 +24,11 @@ try {
         name VARCHAR(500),
         comments  VARCHAR(500)
         )');
-    $pdo->exec('INSERT IGNORE INTO users (`id`, `email`, `password`) VALUES ("1", "admin@pizzerius.fr", "pizzerius");');
-        
+
+    $hashedPassword = password_hash("pizzerius", PASSWORD_DEFAULT);
+    
+    $stmt = $pdo->prepare('INSERT IGNORE INTO users (`id`, `email`, `password`) VALUES (?, ?, ?);');
+    $stmt->execute([1, "admin@pizzerius.fr", $hashedPassword]);
     
 }
     catch (PDOException $e) {

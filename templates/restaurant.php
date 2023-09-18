@@ -3,7 +3,7 @@
     <div class="container-fluid p-5">
         <div class="row">
             <div class="col-sm-6">
-                <video width="600vw" class="rounded-5" muted autoplay>
+                <video width="600vw" id="myVideo" class="rounded-5" muted autoplay>
                     <source src="assets/images/Pizzerius.mp4" type="video/mp4"/>
                 </video>
             </div>
@@ -19,3 +19,7 @@
         </div>
     </div> 
 </section>
+
+
+
+<script src="js/videoreplay.js"></script>

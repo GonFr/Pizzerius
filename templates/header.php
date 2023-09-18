@@ -1,5 +1,6 @@
 <?php 
     session_start() ;
+    // ob_start();
     require_once('C:\xampp\htdocs\pizzerius\lib\config.php');
     require_once('C:\xampp\htdocs\pizzerius\lib\pdo.php');
     //https://www.youtube.com/watch?v=hO8elaSPSkU
@@ -81,6 +82,8 @@
         </header>    
 
         <script src="js/tittlechange.js"></script>
+        
+        
                            
     </body>
 </html>

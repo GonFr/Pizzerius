@@ -18,4 +18,3 @@ var pathname = window.location.pathname;
         default:
         document.getElementById("jschange").textContent ="La meilleure pizza du coin, à emporter";
     }
-    // alert(window.location.pathname);
