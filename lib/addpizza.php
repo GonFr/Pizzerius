@@ -1,5 +1,4 @@
 <?php
-require_once('lib/addpizza.php');
 
 try {
     function addpizza(PDO $pdo,  string $name, float $littlepizzaprice, float $bigpizzaprice, string $ingredients) {
@@ -65,6 +64,6 @@ if ($po) {
         <input type="text" name="ingredients" id="ingredients" class="form-control">
     </div> 
     <input type="submit" value="Enregistrer" name="addpizza" class="btn btn-primary">
-
-
 </form>
+
+

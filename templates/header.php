@@ -1,7 +1,8 @@
 <?php 
     session_start() ;
-    require_once('C:\xampp\htdocs\pizzerius\lib\config.php');
-    require_once('C:\xampp\htdocs\pizzerius\lib\pdo.php');
+    require_once('./lib/config.php');
+    require_once('./lib/pdo.php');
+    require_once('./lib/schedule.php');
     $currentPage = basename($_SERVER['SCRIPT_NAME']);
 ?>
 
@@ -41,7 +42,7 @@
                     </a>
                     <div class="hstack">
                         <img src="assets/images/clock_upline.png" alt="Icone horloge" class="hovericon" width="100" height="100">
-                        <span class="d-none d-xl-block fs-4 fw-bold p-2 uplinetextwhite">7j/7 11h/23h</span>
+                        <span class="d-none d-xl-block fs-4 fw-bold p-2 uplinetextwhite"><?= htmlspecialchars($schedule['schedule']); ?></span>
                     </div>
                 </nav>
 

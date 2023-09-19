@@ -16,7 +16,7 @@
     </div>
 
 
-    <div class="bg-dark bg-opacity-75 container-fluid position-bottom text-white hstack justify-content-center">
+    <div class="bg-dark bg-opacity-75 container-fluid position-bottom text-white hstack justify-content-center" id="bgimgfooter">
         <nav class="justify-content-between">
             <footer class="py-3 my-4">
                 <ul class="navbar-nav gap-5 hstack">

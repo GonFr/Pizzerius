@@ -12,7 +12,7 @@
 }
 
 .btncustom {
-    background-color: #189BC7;
+    background-color: #189bc7;
     font-weight:bold;
     color:white;
 }
@@ -50,4 +50,12 @@
 .fontnormal {
     font-family: inherit;
     font-family: Helvetica;
+}
+
+#bgimgfooter {
+    background-image: url('../assets/images/footerimg.JPG') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:50vh;
 }

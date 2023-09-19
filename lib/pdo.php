@@ -24,11 +24,18 @@ try {
         name VARCHAR(500),
         comments  VARCHAR(500)
         )');
+    $pdo->exec('CREATE TABLE IF NOT EXISTS schedules (
+        id INT(11) PRIMARY KEY AUTO_INCREMENT,
+        schedule VARCHAR(150)
+        )');
 
     $hashedPassword = password_hash("pizzerius", PASSWORD_DEFAULT);
     
     $stmt = $pdo->prepare('INSERT IGNORE INTO users (`id`, `email`, `password`) VALUES (?, ?, ?);');
     $stmt->execute([1, "admin@pizzerius.fr", $hashedPassword]);
+
+    $stmt = $pdo->prepare("INSERT IGNORE INTO schedules (`id`, `schedule`) VALUES (1, '7j/7 11h/23h');");
+    $stmt->execute();
     
 }
     catch (PDOException $e) {
