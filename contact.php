@@ -2,8 +2,6 @@
     require_once('templates/header.php');
 ?>
 
-
-
 <div class="container-fluid text-center">
     <h2 class="scheduletitle">Nos horaires</h2>
     <p class="fw-bold fs-4">Ouvert tous les jours 11h/23h</p>
@@ -11,8 +9,7 @@
     <p class="fw-bold fs-4">1 rue de Bordeaux</p>
 </div>
 
-
-<!-- Contact form -->
+<!-- Formulaire de contact -->
 
 <h1>Formulaire de contact</h1>
 

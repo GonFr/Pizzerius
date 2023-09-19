@@ -11,8 +11,6 @@ if (!isset($_SESSION['user']) || empty($_SESSION['user']['email'])) {
     require_once('lib/addpizza.php');
 }
 
-
-
 require_once('lib/user.php');
 require_once('templates/footer.php');
 

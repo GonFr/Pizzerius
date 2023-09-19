@@ -20,7 +20,6 @@ $messages = [];
 
 
 if (isset($_POST['addpizza'])) {
-// throw new Exception('Erreur, vous ne pouvez entrer que des chiffres');
 $po = addpizza($pdo, $_POST['name'], $_POST['littlepizzaprice'], $_POST['bigpizzaprice'], $_POST['ingredients']);
 
 if ($po) {
@@ -30,9 +29,6 @@ if ($po) {
 }
 
 }
-
-
-
 
 ?>
 
@@ -49,7 +45,6 @@ if ($po) {
         <?=$error; ?>
     </div>
 <?php } ?>
-
 
 
 <form method="POST" enctype="multipart/form-data">

@@ -2,7 +2,6 @@
     require_once('templates/header.php');
 ?>
 
-
 <div class="container-fluid text-center">
 
     <h1 class="title">Pizzerius vous accueille</h1>
@@ -25,8 +24,6 @@
         <a class="btn rounded-4 btncustom" href="menu.php" type="button">Envie de goûter une délicieuse <strong>pizza</strong> ?</a>
     </div>
 </div>
-
-
 
 <?php
 require_once('templates/footer.php');

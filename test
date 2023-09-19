@@ -1,0 +1,121 @@
+<?php
+
+try {
+    function addcomments(PDO $pdo, string $name, string $comments, ) {
+        $sqlun = "INSERT INTO `commentarea` ( `name`, `comments`) VALUES (:name, :comments);";
+        $queryun = $pdo->prepare($sqlun);
+        $queryun->bindParam(':name', $name, PDO::PARAM_STR);
+        $queryun->bindParam(':comments', $comments, PDO::PARAM_STR);
+        return $queryun->execute();
+    }
+} catch (PDOException $e) {
+    die($e->getMessage());
+}
+
+$errors = [];
+$messages = [];
+
+
+if (isset($_POST['addcomments'])) {
+$po = addcomments($pdo, $_POST['name'], $_POST['comments']);
+
+if ($po) {
+    $messages[] = 'Le commentaire a bien été ajouté';
+} else {
+    $errors[] = 'Une erreur s\'est produite lors de l\'ajout du commentaire';
+}
+
+}
+?>
+
+<?php foreach ($messages as $message) { ?>
+    <div class="alert alert-success">
+        <?=$message; ?>
+    </div>
+<?php } ?>
+
+<?php foreach ($errors as $error) { ?>
+    <div class="alert alert-danger">
+        <?=$error; ?>
+    </div>
+<?php } ?>
+
+<?php
+
+
+// Initialize variables for error messages
+$nameError = $commentsError = '';
+
+// Initialize variables to store user inputs
+$name = $comments = '';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Validate and sanitize user input for name
+    if (isset($_POST['name'])) {
+        $name = trim($_POST['name']);
+        if (empty($name)) {
+            $nameError = "Name is required.";
+        } elseif (strlen($name) > 50) {
+            $nameError = "Name is too long (maximum 50 characters).";
+        }
+        // Additional validation rules can be applied as needed.
+    }
+
+    // Validate and sanitize user input for comments
+    // Validate and sanitize user input for comments
+if (isset($_POST['comments'])) {
+    $comments = trim($_POST['comments']);
+    if (empty($comments)) {
+        $commentsError = "Comments are required.";
+    } elseif (mb_strlen($comments) > 5) { // Use mb_strlen for textarea validation
+        $commentsError = "Comments are too long (maximum 5 characters).";
+    }
+    // Additional validation rules can be applied as needed.
+}
+
+
+    // Check if there are no validation errors
+    if (empty($nameError) && empty($commentsError)) {
+        // The input is valid; you can proceed with database insertion or other actions.
+
+        // Example: Insert data into the database
+        // ...
+    }
+}
+
+$sqlQuery = 'SELECT * FROM commentarea ORDER BY id DESC LIMIT 3';
+$commentStatement = $pdo->prepare($sqlQuery);
+$commentStatement->execute();
+$comments = $commentStatement->fetchAll();
+?>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="name" class="form-label">Pseudo</label>
+                <input type="text" name="name" id="name" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="comments" class="form-label">Commentaire</label>
+                <textarea type="comments" name="comments" id="comments" class="form-control"></textarea>
+            </div>
+            <input type="submit" value="Enregistrer" name="addcomments" class="btn btn-primary">
+        </form>
+    </div>
+</div>
+
+<h1 class="text-center titlecomments text-black fs-1">Espace commentaire</h1>
+
+<button class="btn rounded-4 btncustom" id="myBtn">Ajouter un commentaire</button>
+
+<?php
+
+foreach ($comments as $comment) { ?>
+    <h2 class="fs-3 textcomments">Pseudo : <span class="text-dark"><?php echo htmlspecialchars($comment['name']); ?></span></h2>
+    <h3 class="fs-3 textcomments">Commentaire : <span class="text-dark fontnormal fs-5"><?php echo htmlspecialchars($comment['comments']); ?></span></h3>
+    &nbsp;
+<?php } ?>
+</div>

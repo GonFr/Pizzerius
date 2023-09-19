@@ -1,14 +1,8 @@
 <?php
 require_once('lib/user.php');
-
-
 ?>
 
-
-
 <?php
-
-
 $errors = [];
 $messages = [];
 
@@ -23,7 +17,6 @@ if ($res) {
 }
 
 }
-
 ?>
 
 <h1>Ajouter un nouvel employé</h1>

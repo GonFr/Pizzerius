@@ -6,10 +6,6 @@ require_once('templates/header.php');
 require_once('lib/user.php');
 require_once('lib/pdo.php');
     
-
-
- 
-
 $errors = [];
 $messages = [];
 
@@ -30,8 +26,6 @@ if ($user) {
 
 ob_end_flush();  
 ?>
-
-
 
 <h1>Connexion</h1>
 
@@ -65,7 +59,5 @@ ob_end_flush();
 </form>
 
 <?php
-
-
-
 require_once('templates/footer.php');
+?>

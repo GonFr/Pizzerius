@@ -13,7 +13,6 @@
 <?php } ?>
 
 
-
 <form method="POST" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="name" class="form-label">Nom de la pizza</label>
