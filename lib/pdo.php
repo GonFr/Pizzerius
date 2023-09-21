@@ -27,7 +27,7 @@ try {
         schedule VARCHAR(150)
         )');
        
-    $hashedPassword = password_hash("pizzerius", PASSWORD_DEFAULT);
+    $hashedPassword = password_hash("P1zz3r1u5", PASSWORD_DEFAULT);
     
     $stmt = $pdo->prepare('INSERT IGNORE INTO users (`id`, `email`, `password`) VALUES (?, ?, ?);');
     $stmt->execute([1, "admin@pizzerius.fr", $hashedPassword]);

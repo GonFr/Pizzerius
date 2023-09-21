@@ -9,7 +9,7 @@ $commentStatement->execute();
 $comments = $commentStatement->fetchAll();
 ?>
 
-<!-- Pizzas carousel + Commentary section-->
+<!-- Pizzas carousel + Section Commentaire-->
 <div class="row border border-dark container-fluid py-5 rounded">
     <!-- Carousel -->
     <div id="carouselExampleDark" class="carousel carousel-dark slide col m-0" data-bs-ride="carousel">
@@ -39,11 +39,6 @@ $comments = $commentStatement->fetchAll();
         <span class="visually-hidden">Next</span>
     </button>
 
-
-
-
-    
-
     <!-- Commentary -->
     <div class="col rounded justify-content-center overflow-auto" style="max-width: 1000px; max-height: 400px;">
         <!-- The Modal -->
@@ -52,14 +47,14 @@ $comments = $commentStatement->fetchAll();
                 <span class="close">&times;</span>
                 <form method="POST" enctype="multipart/form-data">
                     <div class="mb-3">
-                        <label for="name" class="form-label">Pseudo</label>
+                        <label for="name" class="form-label formmodal">Pseudo</label>
                         <input type="text" name="name" id="name" class="form-control">
                     </div>
                     <div class="mb-3">
-                        <label for="comments" class="form-label">Commentaire</label>
+                        <label for="comments" class="form-label formmodal">Commentaire</label>
                         <textarea name="comments" id="comments" class="form-control"></textarea>
                     </div>
-                    <input type="submit" value="Enregistrer" name="addcomments" class="btn btn-primary">
+                    <input type="submit" value="Enregistrer" name="addcomments" class="btn btnmodal">
                 </form>
             </div>
         </div>

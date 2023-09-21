@@ -2,7 +2,6 @@
 if (isset($_POST['addschedule'])) {
     $schedule = $_POST['schedule'];
 
-    // Validate the schedule (you can add more validation as needed)
     if (empty($schedule)) {
         echo "Schedule cannot be empty.";
     } else {

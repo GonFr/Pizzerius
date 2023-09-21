@@ -1,6 +1,5 @@
 <?php
 
-
 function addUser(PDO $pdo, string $email, string $password) {
     $sql = "INSERT IGNORE INTO `users` (`email`, `password`) VALUES (:email, :password);";
     $query = $pdo->prepare($sql);
