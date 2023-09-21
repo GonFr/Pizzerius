@@ -5,15 +5,12 @@
     require_once('templates/card.php');
     require_once('templates/carousel&comments.php');
     require_once('templates/notes.php');
+    require_once('templates/card.php');
+    require_once('templates/footer.php');
 ?>
-
-
 <script src="js/modal.js"></script>
 
-<?php
-require_once('templates/card.php');
-require_once('templates/footer.php');
-?>
+
 
 
 

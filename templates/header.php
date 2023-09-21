@@ -27,6 +27,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="icon" href="assets/images/pizza_favicon.png" type="image/x-icon">
         <title>Pizzerius, votre pizzeria à Bordeaux, Les meilleurs pizzas grecques proche de chez vous</title>
     </head>
     <body>
@@ -77,9 +78,13 @@
             </div>
         </header>    
 
-        <script src="js/tittlechange.js"></script>
-        
-        
-                           
+        <div id="cookiePopup" class="cookie-popup container-fluid fs-5 text-center fixed-bottom bg-dark text-white p-2">
+            Votre site Pizzerius utilise des cookies pour vous assurer une expérience  d'utilisation optimale. <a href="index.php" id="acceptCookies" class="text-opacity-50 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">J'accepte</a>
+        </div>
+
+
+
+        <script src="js/cookie.js"></script>                      
+        <script src="js/tittlechange.js"></script>                      
     </body>
 </html>

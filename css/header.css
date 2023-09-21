@@ -27,7 +27,7 @@
 
 .textheader {
     font-family: 'Dancing Script', cursive;
-    font-size: 100px;
+    font-size: 5rem;
     font-weight: bolder;
     
 }
@@ -40,6 +40,8 @@
 
 }
 
-#restaurant1 {
-    border: solid 10px black;
+.cookie-popup {
+    display: none;
+    position: fixed;
 }
+

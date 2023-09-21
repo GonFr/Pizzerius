@@ -57,5 +57,12 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* height:20vh; */
+}
+
+.cardborder {
+    border-bottom: solid 10px black;
+}
+
+#restaurant1 {
+    border: solid 10px black;
 }

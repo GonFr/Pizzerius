@@ -9,6 +9,8 @@ $mainMenu = [
 
  $secondaryMenu = [
     'index.php' => '© 2023 pizzerius.fr',
-    'legalmentions.php' => 'Mentions Légales',
-    'login.php' => 'Je suis l\'administrateur'
+    'legalmentions.php' => 'Mentions Légales'
   ]; 
+
+?>
+

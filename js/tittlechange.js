@@ -10,7 +10,7 @@ var pathname = window.location.pathname;
             document.getElementById("jschange").textContent ="Emportez une délicieuse pizza";
         break;
         case "/pizzerius/contact.php" :
-            document.getElementById("jschange").textContent ="Vous désirez nous contacter";
+            document.getElementById("jschange").textContent ="Vous désirez nous contacter ?";
         break;
         case "/pizzerius/about.php" :
             document.getElementById("jschange").textContent ="Découvrez Pizzerius";

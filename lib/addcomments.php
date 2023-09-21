@@ -24,6 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $errors[] = "Vous devez ajouter un commentaire.";
             } elseif (mb_strlen($comments) > 250) { 
                 $errors[] = "Le commentaire est trop long (250 caractères max).";
+            } elseif (!preg_match('/^[A-Za-z]+$/', $name)) {
+                $errors[] = "Vous ne pouvez entrer que des lettres.";
             }
         }
 
