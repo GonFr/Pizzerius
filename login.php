@@ -3,7 +3,7 @@
 
 ob_start();
 require_once('templates/header.php');
-require_once('lib/user.php');
+require_once('lib/addadmin.php');
 require_once('lib/pdo.php');
     
 $errors = [];
@@ -27,7 +27,7 @@ if ($user) {
 ob_end_flush();  
 ?>
 
-<h1>Connexion</h1>
+<h1 class="titlelogin text-center">Connexion</h1>
 
 <?php foreach ($messages as $message) { ?>
     <div class="alert alert-success">
@@ -53,7 +53,7 @@ ob_end_flush();
         <input type="password" name="password" id="password" class="form-control">
     </div>
 
-    <input type="submit" value="Connexion" name="loginUser" class="btn btn-primary">
+    <input type="submit" value="Me connecter" name="loginUser" class="btn btn-primary btnlogin">
 
 
 </form>

@@ -16,12 +16,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-<div class="container-fluid">
-    <label for="typeFilter">Filtrer par type :</label>
-    <select id="typeFilter">
-        <option value="">Tous</option>
-        <option value="Basique">Basique</option>
-        <option value="Gourmande">Gourmande</option>
-    </select>
-</div>
+    

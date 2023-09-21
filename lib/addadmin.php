@@ -25,3 +25,33 @@ function verifyUserLoginPassword(PDO $pdo, string $email, string $password) {
         return false;
     }
 }
+
+$errors = [];
+$messages = [];
+
+if (isset($_POST['addUser'])) {
+
+$res = addUser($pdo, $_POST['email'], $_POST['password']);
+
+if ($res) {
+    $messages[] = 'Vous avez bien ajouté un employé';
+} else {
+    $errors[] = 'Une erreur s\'est produite lors l\'ajout d\'un administateur';
+}
+
+}
+
+
+?>
+
+<?php foreach ($messages as $message) { ?>
+<div class="alert alert-success">
+    <?=$message; ?>
+</div>
+<?php } ?>
+
+<?php foreach ($errors as $error) { ?>
+<div class="alert alert-danger">
+    <?=$error; ?>
+</div>
+<?php } ?>

@@ -7,6 +7,7 @@
     require_once('templates/notes.php');
 ?>
 
+
 <script src="js/modal.js"></script>
 
 <?php

@@ -1,5 +1,5 @@
 <?php 
-    session_start() ;
+    require_once('./lib/session.php');
     require_once('./lib/config.php');
     require_once('./lib/pdo.php');
     require_once('./lib/schedule.php');
@@ -22,6 +22,8 @@
         <link rel="stylesheet" type="text/css" href="css/about.css"/>
         <link rel="stylesheet" type="text/css" href="css/contact.css"/>
         <link rel="stylesheet" type="text/css" href="css/legalmentions.css"/>
+        <link rel="stylesheet" type="text/css" href="css/login.css"/>
+        <link rel="stylesheet" type="text/css" href="css/admin.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">

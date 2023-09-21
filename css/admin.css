@@ -1,0 +1,22 @@
+.titleadmin, .titlelabel {
+    font-family: 'Dancing Script', cursive;
+}
+
+.titleadmin {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #189BC7;
+}
+
+.btnadmin {
+    background-color: #189bc7;
+    font-weight:bold;
+    color:white;
+}
+.btnadmin:hover {
+    background-color: #189bc777;
+}
+
+.titlelabel {
+    font-size: 2rem;
+}

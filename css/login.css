@@ -1,0 +1,16 @@
+.titlelogin {
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    font-weight: bolder;
+    color: #189BC7;
+}
+
+.btnlogin {
+    background-color: #189bc7;
+    font-weight:bold;
+    color:white;
+}
+.btnlogin:hover {
+    background-color: #189bc777;
+}
+
