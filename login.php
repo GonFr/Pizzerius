@@ -1,21 +1,19 @@
 <?php
-// session_start(); 
-
 ob_start();
 require_once('templates/header.php');
-require_once('lib/addadmin.php');
+require_once('lib/add&deladmin.php');
 require_once('lib/pdo.php');
     
 $errors = [];
 $messages = [];
 
 
-if (isset($_POST['loginUser'])) {
+if (isset($_POST['loginAdmin'])) {
 
-$user = verifyUserLoginPassword($pdo, $_POST['email'], $_POST['password']);
+$admin = verifyAdminLoginPassword($pdo, $_POST['email'], $_POST['password']);
 
-if ($user) {
-    $_SESSION['user'] = ['email' => $user['email']];
+if ($admin) {
+    $_SESSION['admin'] = ['email' => $admin['email']];
     header('location:admin.php');
     exit();
 } else {
@@ -31,13 +29,13 @@ ob_end_flush();
 
 <?php foreach ($messages as $message) { ?>
     <div class="alert alert-success">
-        <?=$message; ?>
+        <?= htmlspecialchars($message); ?>
     </div>
 <?php } ?>
 
 <?php foreach ($errors as $error) { ?>
     <div class="alert alert-danger">
-        <?=$error; ?>
+        <?= htmlspecialchars($error); ?>
     </div>
 <?php } ?>
 
@@ -53,7 +51,7 @@ ob_end_flush();
         <input type="password" name="password" id="password" class="form-control">
     </div>
 
-    <input type="submit" value="Me connecter" name="loginUser" class="btn btn-primary btnlogin">
+    <input type="submit" value="Me connecter" name="loginAdmin" class="btn btn-primary btnlogin">
 
 
 </form>

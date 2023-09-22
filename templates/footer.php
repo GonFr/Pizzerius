@@ -22,7 +22,7 @@ require_once('lib/config.php');
                         <li class="nav-item"><a href="<?=$key; ?>" class="text-white text-opacity-50 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><?=$value ;?></a></li>
                     <?php } ?>
                     <li>
-                    <?php if(!isset($_SESSION['user'])) { ?>
+                    <?php if(!isset($_SESSION['admin'])) { ?>
                         <a href="login.php" class="text-white text-opacity-50 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Je suis l'administrateur</a> 
                     <?php } else { ?>
                         <a href="admin.php" class="text-white text-opacity-50 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Modifier le site</a>

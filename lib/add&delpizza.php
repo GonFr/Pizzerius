@@ -44,22 +44,40 @@ try {
     die($e->getMessage());
 }
 
+?>
 
+<?php
+//Supprimer une pizza
+
+if (isset($_POST['deletePizza'])) {
+    $deletePizza = $_POST['deleteName'];
+
+    $sql = "DELETE FROM pizzas WHERE name = :name";
+    $query = $pdo->prepare($sql);
+    $query->bindParam(':name', $deletePizza, PDO::PARAM_STR);
+
+    if ($query->execute()) {
+        if ($query->rowCount() > 0) {
+            $messages[] = 'La pizza a bien été supprimée.';
+        } else {
+            $errors[] = 'Cette pizza n\'existe pas.';
+        }
+    } else {
+        $errors[] = 'La suppression de la pizza a échoué.';
+    }
+}
 ?>
 
 <?php foreach ($messages as $message) { ?>
     <div class="alert alert-success">
-        <?= $message; ?>
+        <?= htmlspecialchars($message); ?>
     </div>
 <?php } ?>
 
 <?php foreach ($errors as $error) { ?>
     <div class="alert alert-danger">
-        <?= $error; ?>
+        <?= htmlspecialchars($error); ?>
     </div>
 <?php } ?>
-
-
-
 
 

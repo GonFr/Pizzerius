@@ -12,7 +12,7 @@ try {
         ingredients VARCHAR(500),
         type VARCHAR(50) DEFAULT NULL
         )');
-    $pdo->exec('CREATE TABLE IF NOT EXISTS users (
+    $pdo->exec('CREATE TABLE IF NOT EXISTS admins (
         id INT(11) PRIMARY KEY AUTO_INCREMENT,
         email VARCHAR(254) NOT NULL UNIQUE,
         password VARCHAR(60) NOT NULL
@@ -29,7 +29,7 @@ try {
        
     $hashedPassword = password_hash("P1zz3r1u5", PASSWORD_DEFAULT);
     
-    $stmt = $pdo->prepare('INSERT IGNORE INTO users (`id`, `email`, `password`) VALUES (?, ?, ?);');
+    $stmt = $pdo->prepare('INSERT IGNORE INTO admins (`id`, `email`, `password`) VALUES (?, ?, ?);');
     $stmt->execute([1, "admin@pizzerius.fr", $hashedPassword]);
 
     $stmt = $pdo->prepare('INSERT IGNORE INTO commentarea (`id`, `name`, `comments`) VALUES (?, ?, ?);');
