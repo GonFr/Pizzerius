@@ -33,7 +33,7 @@ try {
     $stmt->execute([1, "admin@pizzerius.fr", $hashedPassword]);
 
     $stmt = $pdo->prepare('INSERT IGNORE INTO commentarea (`id`, `name`, `comments`) VALUES (?, ?, ?);');
-    $stmt->execute([1, "Fred", "Les meilleures pizzas de ma vie"]);
+    $stmt->execute([1, "Fred", "Les pizzas sont excellentes et le rapport qualité prix est top"]);
 
     $stmt = $pdo->prepare("INSERT IGNORE INTO schedules (`id`, `schedule`) VALUES (1, '7j/7 11h/23h');");
     $stmt->execute();
@@ -45,7 +45,6 @@ try {
 }
     catch (PDOException $e) {
     die($e->getMessage()); 
-    // echo "La connexion avec la base de donnée à échouée";
 }
 
 

@@ -5,7 +5,6 @@
     require_once('./lib/schedule.php');
     $currentPage = basename($_SERVER['SCRIPT_NAME']);
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -37,7 +36,7 @@
                 <nav class="justify-content-between hstack sticky-top uplinecolor">
                     <a class="btn hstack" href="https://www.google.fr" target="_blank">
                         <img src="assets/images/pinmap_upline.png" alt="Icone map renvoyant à l'adresse de Pizzerius" class="hovericon" width="100" height="100">
-                        <span class="d-none d-xl-block fs-4 fw-bold uplinetextwhite">Pl. de la Bourse, 33000 Bordeaux</span>
+                        <span class="d-none d-xl-block fs-4 fw-bold uplinetextwhite">Pl. de la Bourse,<br> 33000 Bordeaux</span>
                     </a>
                     <a class="btn hstack" href="tel:02 51 78 81 15">
                         <img src="assets/images/phone_upline.png" alt="Icone téléphone" class="hovericon"  width="100" height="100">
@@ -49,10 +48,10 @@
                     </div>
                 </nav>
 
-                <!--Logo-->
+                <!-- Logo -->
                 <img class="d-block mx-auto" src="assets/images/logo_pizzerius.png" alt="logo de l'entreprise pizzerius" width="400" height="250">
                 <div class="container">
-                    <!-- Navbar--> <!-- Le bouton nav ne se rétracte pas sur petits écrans-->
+                    <!-- Navbar -->
                     <div class="d-flex justify-content-center">
                         <nav class="navbar navbar-expand-xl justify-content-center">
                             <div class="container-fluid">
@@ -71,7 +70,7 @@
                     </div> 
                 </div> 
                 
-                <!-- Maintext -->
+                <!-- Texte principal -->
                 <div class="container-fluid">
                     <h1 class="text-center textheader" id="jschange">La meilleure pizza du coin, à emporter</h1>
                 </div>

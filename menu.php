@@ -25,8 +25,6 @@ $pizzas = $pizzaStatement->fetchAll();
 </div>
 
 <?php
-
-// On affiche chaque pizza une à une
 foreach ($pizzas as $pizza) {
 ?>
 <article>
@@ -45,9 +43,7 @@ foreach ($pizzas as $pizza) {
 }
 ?>
 
-
 <script src="js/filter.js"></script>
-
 
 <?php
 require_once('templates/footer.php');

@@ -48,7 +48,6 @@ try {
 
 <?php
 //Supprimer une pizza
-
 if (isset($_POST['deletePizza'])) {
     $deletePizza = $_POST['deleteName'];
 

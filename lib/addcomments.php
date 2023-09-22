@@ -1,5 +1,4 @@
 <?php
-
 $errors = [];
 $messages = [];
 
@@ -61,8 +60,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                         if ($po) {
                             $messages[] = 'Le commentaire a bien été ajouté';
-                            
-                            // Mark the form as submitted to prevent further submissions
                             $_SESSION['form_submitted'] = true;
                         } else {
                             $errors[] = 'Une erreur s\'est produite lors de l\'ajout du commentaire';
@@ -77,35 +74,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
-<?php
-//Supprimer un commentaire
-if (isset($_POST['deleteComment'])) {
-    $deleteComment = $_POST['artoun'];
-
-    $sql = "DELETE FROM commentarea WHERE name = :name";
-    $query = $pdo->prepare($sql);
-    $query->bindParam(':name', $deleteComment, PDO::PARAM_STR);
-    if ($query->execute()) {
-        if ($query->rowCount() > 0) {
-            $messages[] = 'Le commentaire a bien été supprimé.';
-        } else {
-            $errors[] = 'Ce commentaire n\'existe pas.';
-        }
-    } else {
-        $errors[] = 'La suppression du commentaire a échoué.';
-    }
-}
-?>
-
-<?php foreach ($messages as $message) { ?>
-    <div class="alert alert-success">
-        <?= htmlspecialchars($message); ?>
-    </div>
-<?php } ?>
-
-<?php foreach ($errors as $error) { ?>
-    <div class="alert alert-danger">
-        <?= htmlspecialchars($error); ?>
-    </div>
-<?php } ?>

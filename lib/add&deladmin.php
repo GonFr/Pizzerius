@@ -54,7 +54,6 @@ if (isset($_POST['addAdmin'])) {
 
 <?php 
 //Supprimer un administrateur
-
 if (isset($_POST['deleteAdmin'])) {
     $deleteEmail = $_POST['deleteEmail'];
 
