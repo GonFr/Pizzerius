@@ -34,7 +34,7 @@
             <div class="firstbackimg">
                 <!-- Upline -->
                 <nav class="justify-content-between hstack sticky-top uplinecolor">
-                    <a class="btn hstack" href="https://www.google.fr" target="_blank">
+                    <a class="btn hstack" href="https://www.google.com/maps?t=m&hl=fr&gl=FR&cid=1679382234470550288" target="_blank">
                         <img src="assets/images/pinmap_upline.png" alt="Icone map renvoyant à l'adresse de Pizzerius" class="hovericon" width="100" height="100">
                         <span class="d-none d-xl-block fs-4 fw-bold uplinetextwhite">Pl. de la Bourse,<br> 33000 Bordeaux</span>
                     </a>
