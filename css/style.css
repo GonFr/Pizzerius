@@ -34,7 +34,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height:50vh;
 }
 
 .secondbtncustom {
@@ -53,7 +52,7 @@
 }
 
 #bgimgfooter {
-    background-image: url('../assets/images/footerimg.JPG') !important;
+    background-image: url('../assets/images/footerimg.JPG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,4 +64,13 @@
 
 #restaurant1 {
     border: solid 10px black;
+}
+
+.cardsize {
+    width:100%;
+    height:100%;
+}
+
+.headersize {
+    height: 100%;
 }

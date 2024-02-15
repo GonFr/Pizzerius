@@ -14,18 +14,18 @@ require_once('lib/config.php');
         ></iframe>
     </div>
 
-    <div class="bg-dark bg-opacity-75 container-fluid position-bottom text-white hstack justify-content-center" id="bgimgfooter">
-        <nav class="justify-content-between">
+    <div class="container-fluid d-flex justify-content-center hstack" id="bgimgfooter">
+        <nav class="">
             <footer class="py-3 my-4">
-                <ul class="navbar-nav gap-5 hstack">
+                <ul class="navbar-nav gap-3 hstack">
                     <?php foreach ($secondaryMenu as $key => $value) { ?>
-                        <li class="nav-item"><a href="<?=$key; ?>" class="text-white text-opacity-50 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><?=$value ;?></a></li>
+                        <li class="nav-item"><a href="<?=$key; ?>" class="text-dark text-opacity-50 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><?=$value ;?></a></li>
                     <?php } ?>
                     <li>
                     <?php if(!isset($_SESSION['admin'])) { ?>
-                        <a href="login.php" class="text-white text-opacity-50 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Je suis l'administrateur</a> 
+                        <a href="login.php" class="text-dark text-opacity-50 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Je suis l'administrateur</a> 
                     <?php } else { ?>
-                        <a href="admin.php" class="text-white text-opacity-50 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Modifier le site</a>
+                        <a href="admin.php" class="text-dark text-opacity-50 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Modifier le site</a>
                     <?php } ?> 
                     </li>
                 </ul>

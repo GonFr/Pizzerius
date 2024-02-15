@@ -30,57 +30,53 @@
         <title>Pizzerius, votre pizzeria à Bordeaux, Les meilleurs pizzas grecques proche de chez vous</title>
     </head>
     <body>
-        <header>    
-            <div class="firstbackimg">
+        <header class="firstbackimg headersize text-center">   
                 <!-- Upline -->
                 <nav class="justify-content-between hstack sticky-top uplinecolor">
                     <a class="btn hstack" href="https://www.google.com/maps?t=m&hl=fr&gl=FR&cid=1679382234470550288" target="_blank">
-                        <img src="assets/images/pinmap_upline.png" alt="Icone map renvoyant à l'adresse de Pizzerius" class="hovericon" width="100" height="100">
-                        <span class="d-none d-xl-block fs-4 fw-bold uplinetextwhite">Pl. de la Bourse,<br> 33000 Bordeaux</span>
+                        <img src="assets/images/pinmap_upline.png" alt="Icone map renvoyant à l'adresse de Pizzerius" class="hovericon" width="100" >
+                        <span class="d-none d-xl-block fs-5 fw-bold uplinetextwhite">Pl. de la Bourse,<br> 33000 Bordeaux</span>
                     </a>
-                    <a class="btn hstack" href="tel:02 51 78 81 15">
-                        <img src="assets/images/phone_upline.png" alt="Icone téléphone" class="hovericon"  width="100" height="100">
-                        <span class="d-none d-xl-block fs-4 fw-bold uplinetextwhite">06 12 34 56 78</span>
+                    <a class="btn hstack" href="tel:06 12 34 56 78">
+                        <img src="assets/images/phone_upline.png" alt="Icone téléphone" class="hovericon"  width="100">
+                        <span class="d-none d-xl-block fs-5 fw-bold uplinetextwhite">06 12 34 56 78</span>
                     </a>
                     <div class="hstack">
-                        <img src="assets/images/clock_upline.png" alt="Icone horloge" class="hovericon" width="100" height="100">
-                        <span class="d-none d-xl-block fs-4 fw-bold p-2 uplinetextwhite"><?= htmlspecialchars($schedule['schedule']); ?></span>
+                        <a href="contact.php">
+                            <img src="assets/images/clock_upline.png" alt="Icone horloge" class="hovericon" width="100">
+                        </a>
+                        <span class="d-none d-xl-block fs-5 fw-bold p-2 uplinetextwhite"><?= htmlspecialchars($schedule['schedule']);?></span>
                     </div>
                 </nav>
 
                 <!-- Logo -->
-                <img class="d-block mx-auto" src="assets/images/logo_pizzerius.png" alt="logo de l'entreprise pizzerius" width="400" height="250">
-                <div class="container">
-                    <!-- Navbar -->
-                    <div class="d-flex justify-content-center">
-                        <nav class="navbar navbar-expand-xl justify-content-center">
-                            <div class="container-fluid">
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nvb" aria-controls="nvb" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse" id="nvb">
-                                    <ul class="navbar-nav gap-5">
-                                        <?php foreach ($mainMenu as $key => $value) { ?>
-                                            <li class="nav-item"><a href="<?=$key; ?>" class="nav-link fw-bold textcolor rounded <?php if ($currentPage === $key) { echo 'navcolor'; } ?>"><?=$value ;?></a></li>
-                                        <?php } ?>
-                                    </ul>
-                                </div> 
-                            </div> 
-                        </nav> 
-                    </div> 
-                </div> 
-                
+                <div class="">
+                    <img class="img-fluid" src="assets/images/logo_pizzerius.png" alt="logo de l'entreprise pizzerius" width="30%">
+                </div>
                 <!-- Texte principal -->
-                <div class="container-fluid">
+                <div class="">
                     <h1 class="text-center textheader" id="jschange">La meilleure pizza du coin, à emporter</h1>
                 </div>
-            </div>
+                    <!-- Navbar -->
+                <div class="d-flex justify-content-center">
+                    <nav class="navbar navbar-expand-xl">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nvb" aria-controls="nvb" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="nvb">
+                            <ul class="navbar-nav gap-5">
+                                <?php foreach ($mainMenu as $key => $value) { ?>
+                                    <li class="nav-item"><a href="<?=$key; ?>" class="nav-link fw-bold textcolor rounded fs-5 <?php if ($currentPage === $key) { echo 'navcolor'; } ?>"><?=$value ;?></a></li>
+                                <?php } ?>
+                            </ul>
+                        </div> 
+                    </nav> 
+                </div>
         </header>    
 
         <div id="cookiePopup" class="cookie-popup container-fluid fs-5 text-center fixed-bottom bg-dark text-white p-2">
             Votre site Pizzerius utilise des cookies pour vous assurer une expérience  d'utilisation optimale. <a href="index.php" id="acceptCookies" class="text-opacity-50 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">J'accepte</a>
         </div>
-
 
 
         <script src="js/cookie.js"></script>                      

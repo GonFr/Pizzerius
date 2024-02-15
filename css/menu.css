@@ -1,4 +1,4 @@
-.maintitle, .namepizza, .textcolor, .secondarytitle {
+.maintitle, .namepizza, .secondarytitle {
     color :#189BC7;
     font-family: 'Dancing Script', cursive;
 }
@@ -7,11 +7,3 @@
     font-weight: 700;
     font-size: 4em;
 }
-
-.secondarytitle {
-    font-family: 'Dancing Script', cursive;
-    font-weight: 700;
-    font-size: 3rem;
-}
-
-

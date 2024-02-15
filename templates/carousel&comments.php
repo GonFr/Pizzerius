@@ -10,27 +10,21 @@ $comments = $commentStatement->fetchAll();
 ?>
 <section>
     <!-- Pizzas carousel + Section Commentaire-->
-    <div class="row container-fluid ">
+    <div class="row container-fluid d-flex align-items-center">
         <!-- Carousel -->
         <div id="carouselDark" class="carousel carousel-dark slide col m-0" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner rounded">
+            <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="4000">
-                    <img src="assets/images/god_pizza.png" class="w-100" alt="..." width="800">
+                    <img src="assets/images/god_pizza.png" class="w-100" alt="..." width="1000px">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="assets/images/salmon_pizza.png" class="w-100" alt="..." width="800">
+                    <img src="assets/images/salmon_pizza.png" class="w-100" alt="..." width="1000px">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="assets/images/grec_pizza.png" class="w-100" alt="..." width="800">
+                    <img src="assets/images/grec_pizza.png" class="w-100" alt="..." width="1000px">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="assets/images/athena_pizza.png" class="w-100" alt="..." width="800">
+                    <img src="assets/images/athena_pizza.png" class="w-100" alt="..." width="1000px">
                 </div>
             </div>
         </div>

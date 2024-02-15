@@ -1,9 +1,9 @@
 <!-- Restaurant -->
 <section id="restaurant1">
-    <div class="container-fluid p-5">
+    <div class="container container-fluid p-5">
         <div class="row">
-            <div class="col-sm-6">
-                <video width="100%" id="myVideo" class="rounded-5" muted autoplay>
+            <div class="col-sm-6 d-flex">
+                <video width="100%" id="myVideo" class="" muted autoplay>
                     <source src="assets/images/Pizzerius.mp4" type="video/mp4"/>
                 </video>
             </div>

@@ -1,10 +1,10 @@
 var pathname = window.location.pathname;
     switch(pathname) {
         case "/pizzerius/" :
-            document.getElementById("jschange").textContent ="Bienvenue chez Pizzerius";
+            document.getElementById("jschange").textContent ="Bienvenue";
         break;
         case "/pizzerius/index.php" :
-            document.getElementById("jschange").textContent ="Bienvenue chez Pizzerius";
+            document.getElementById("jschange").textContent ="Bienvenue";
         break;
         case "/pizzerius/menu.php" :
             document.getElementById("jschange").textContent ="Emportez une délicieuse pizza";

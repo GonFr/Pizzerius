@@ -19,7 +19,6 @@ if ($admin) {
 } else {
     $errors[] = 'Email ou mot de passe incorrect';
 }
-
 } 
 
 ob_end_flush();  
